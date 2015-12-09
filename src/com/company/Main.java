@@ -3,9 +3,9 @@ package com.company;
 public class Main {
 
     public static void main(String[] args) {
-        UserSet simonArray = new UserSet(); //declares an array simonArray of type NarrayList
-        UserSet felixArray = new UserSet(); //declares an array felixArray of type NarrayList
-        User simon = new User(); // new User
+        UserSet simonArray = new UserSet();
+        UserSet felixArray = new UserSet();
+        User simon = new User();
         simon.setPassword("hhhh");
         simon.setUsername("simon_username");
         User felix = new User();
@@ -19,10 +19,12 @@ public class Main {
 
         simonArray.print();
         System.out.println("end of simonArray");
+        System.out.println("");
         UserSet set = new UserSet();
-        //set.add(11, simon);
         set.add(simonArray.getMas());
-        set.print();
+        set.print();        // code for copying elements from simonArray to set should be here (add. method in UserSet)
+        System.out.println("");
+        System.out.println("end of set array");
 
         }
 

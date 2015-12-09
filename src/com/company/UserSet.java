@@ -28,9 +28,6 @@ public class UserSet implements CopyInterface {
         this.mas = new User[size];
         this.lastAddedPosition = 0;
 
-        // implement copying of elements from SimonArray array to array ContainerArray
-        // use 2 cycles 'for' - one to read 1st and other to write to 2nd
-        //
 
     }
 
@@ -58,7 +55,7 @@ public class UserSet implements CopyInterface {
 
     @Override
     public boolean add(User[] array) {
-        System.out.println("code for copying array here");
+        System.out.println("code for copying elements from simonArray to set should be here (add. method in UserSet)");
         for (int i = 0; i < array.length; i++) {
 
             for (int j = 1; j < array.length; j++) {
